@@ -2,36 +2,43 @@ g++ -O0 complex.cpp
 sum=4e+38
 ./a.out  0,82s user 0,00s system 76% cpu 1,081 total 
  39K 23 сен 00:53 a.out
+
 --------------
  g++ -O1 complex.cpp       
 sum=4e+38
 ./a.out  0,27s user 0,00s system 56% cpu 0,475 total
  40K 23 сен 00:59 a.out
+
 --------------
  g++ -O2 complex.cpp     
 sum=4e+38
-./a.out  0,23s user 0,00s system 50% cpu 0,454 total           
+./a.out  0,23s user 0,00s system 50% cpu 0,454            
  35K 23 сен 01:02 a.out
+
 ---------------
  g++ -O3 complex.cpp      
 sum=4e+38
 ./a.out  0,21s user 0,00s system 29% cpu 0,736 total
  35K 23 сен 01:04 a.out
+
 ---------------
 g++ -Os complex.cpp      
 sum=4e+38
-./a.out  0,19s user 0,00s system 47% cpu 0,411 total            
+./a.out  0,19s user 0,00s system 47% cpu 0,411             
  35K 23 сен 01:04 a.out
+
 ---------------
 g++ -Ofast complex.cpp       
 sum=4e+38
-./a.out  0,23s user 0,00s system 50% cpu 0,464 total              
+./a.out  0,23s user 0,00s system 50% cpu 0,464          
  35K 23 сен 01:05 a.out
+
 ---------------
  g++ -Og complex.cpp    
 sum=4e+38
 ./a.out  0,27s user 0,00s system 56% cpu 0,475 total
  40K 23 сен 01:06 a.out
+
 ----------------
 g++ -Oz complex.cpp      
 sum=4e+38
@@ -46,7 +53,7 @@ a.out:	file format mach-o arm64
 
 Sections:
 Idx Name             Size     VMA              Type
-  0 __text           00000400 0000000100003a1c TEXT
+  0 __text           **00000400** 0000000100003a1c TEXT
   1 __stubs          000000cc 0000000100003e1c TEXT
   2 __gcc_except_tab 0000007c 0000000100003ee8 DATA
   3 __cstring        00000005 0000000100003f64 DATA
@@ -55,7 +62,7 @@ Idx Name             Size     VMA              Type
 
   --------------------------------------------------------
 
-  Вывод:
+  **Вывод:**
   Программа становится больше с ключом компиляции -O0 -Og -O1
   Ключ компиляции влияет на скорость выполнения программы и загрузку cpu(центральный процессор)
   Самая быстрое выполнение программы при компиляции с ключом -Os
