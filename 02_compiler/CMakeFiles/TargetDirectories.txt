@@ -1,0 +1,3 @@
+/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/02_compiler/CMakeFiles/hellow_world.out1.dir
+/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/02_compiler/CMakeFiles/edit_cache.dir
+/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/02_compiler/CMakeFiles/rebuild_cache.dir

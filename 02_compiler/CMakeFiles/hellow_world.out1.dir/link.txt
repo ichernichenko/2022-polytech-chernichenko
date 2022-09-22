@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hellow_world.out1.dir/func.cpp.o CMakeFiles/hellow_world.out1.dir/hellow_world.cpp.o -o hellow_world.out1 
