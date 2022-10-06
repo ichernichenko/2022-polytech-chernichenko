@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/1.cpp" "CMakeFiles/1.cppu.dir/1.cpp.o" "gcc" "CMakeFiles/1.cppu.dir/1.cpp.o.d"
+  "/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/calc.cpp" "CMakeFiles/calculator.dir/calc.cpp.o" "gcc" "CMakeFiles/calculator.dir/calc.cpp.o.d"
+  "/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/calculator.cpp" "CMakeFiles/calculator.dir/calculator.cpp.o" "gcc" "CMakeFiles/calculator.dir/calculator.cpp.o.d"
   )
 
 # Targets to which this target links.

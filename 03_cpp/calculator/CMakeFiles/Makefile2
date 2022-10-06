@@ -54,16 +54,16 @@ RM = /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro
+CMAKE_SOURCE_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro
+CMAKE_BINARY_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/1.cppu.dir/all
+all: CMakeFiles/calculator.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/1.cppu.dir/clean
+clean: CMakeFiles/calculator.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/1.cppu.dir
+# Target rules for target CMakeFiles/calculator.dir
 
 # All Build rule for target.
-CMakeFiles/1.cppu.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/CMakeFiles --progress-num=1,2 "Built target 1.cppu"
-.PHONY : CMakeFiles/1.cppu.dir/all
+CMakeFiles/calculator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles --progress-num=1,2,3 "Built target calculator"
+.PHONY : CMakeFiles/calculator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/1.cppu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.cppu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/CMakeFiles 0
-.PHONY : CMakeFiles/1.cppu.dir/rule
+CMakeFiles/calculator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/calculator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles 0
+.PHONY : CMakeFiles/calculator.dir/rule
 
 # Convenience name for target.
-1.cppu: CMakeFiles/1.cppu.dir/rule
-.PHONY : 1.cppu
+calculator: CMakeFiles/calculator.dir/rule
+.PHONY : calculator
 
 # clean rule for target.
-CMakeFiles/1.cppu.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/clean
-.PHONY : CMakeFiles/1.cppu.dir/clean
+CMakeFiles/calculator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/clean
+.PHONY : CMakeFiles/calculator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

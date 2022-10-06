@@ -1,0 +1,1 @@
+double calc(double a, double b, char $);

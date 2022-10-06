@@ -1,2 +1,2 @@
-# Empty dependencies file for 1.cppu.
+# Empty dependencies file for calculator.
 # This may be replaced when dependencies are built.

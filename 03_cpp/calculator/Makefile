@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro
+CMAKE_SOURCE_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro
+CMAKE_BINARY_DIR = /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/CMakeFiles /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 1.cppu
+# Target rules for targets named calculator
 
 # Build rule for target.
-1.cppu: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.cppu
-.PHONY : 1.cppu
+calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculator
+.PHONY : calculator
 
 # fast build rule for target.
-1.cppu/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/build
-.PHONY : 1.cppu/fast
+calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
+.PHONY : calculator/fast
 
-1.o: 1.cpp.o
-.PHONY : 1.o
+calc.o: calc.cpp.o
+.PHONY : calc.o
 
 # target to build an object file
-1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/1.cpp.o
-.PHONY : 1.cpp.o
+calc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calc.cpp.o
+.PHONY : calc.cpp.o
 
-1.i: 1.cpp.i
-.PHONY : 1.i
+calc.i: calc.cpp.i
+.PHONY : calc.i
 
 # target to preprocess a source file
-1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/1.cpp.i
-.PHONY : 1.cpp.i
+calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calc.cpp.i
+.PHONY : calc.cpp.i
 
-1.s: 1.cpp.s
-.PHONY : 1.s
+calc.s: calc.cpp.s
+.PHONY : calc.s
 
 # target to generate assembly for a file
-1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.cppu.dir/build.make CMakeFiles/1.cppu.dir/1.cpp.s
-.PHONY : 1.cpp.s
+calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calc.cpp.s
+.PHONY : calc.cpp.s
+
+calculator.o: calculator.cpp.o
+.PHONY : calculator.o
+
+# target to build an object file
+calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calculator.cpp.o
+.PHONY : calculator.cpp.o
+
+calculator.i: calculator.cpp.i
+.PHONY : calculator.i
+
+# target to preprocess a source file
+calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calculator.cpp.i
+.PHONY : calculator.cpp.i
+
+calculator.s: calculator.cpp.s
+.PHONY : calculator.s
+
+# target to generate assembly for a file
+calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/calculator.cpp.s
+.PHONY : calculator.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 1.cppu"
-	@echo "... 1.o"
-	@echo "... 1.i"
-	@echo "... 1.s"
+	@echo "... calculator"
+	@echo "... calc.o"
+	@echo "... calc.i"
+	@echo "... calc.s"
+	@echo "... calculator.o"
+	@echo "... calculator.i"
+	@echo "... calculator.s"
 .PHONY : help
 
 

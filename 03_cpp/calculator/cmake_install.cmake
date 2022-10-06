@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro
+# Install script for directory: /Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/intro/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
