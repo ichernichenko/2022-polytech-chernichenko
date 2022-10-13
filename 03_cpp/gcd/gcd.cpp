@@ -4,7 +4,7 @@
 int gcd(int a, int b)
 {
 
-    if (a < 0)
+    if (a < 0) 
         a *= -1;
     if (b < 0)
         b *= -1;
