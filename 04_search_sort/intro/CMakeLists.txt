@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.1...3.24)
+
 project(ProjectName
         VERSION 1.0
         LANGUAGES CXX)
-add_executable(intro binary_search.cpp linear_search.cpp intro.cpp)
+
+add_executable( intro 
+                src/binary_search.cpp 
+                src/linear_search.cpp
+                src/intro.cpp)

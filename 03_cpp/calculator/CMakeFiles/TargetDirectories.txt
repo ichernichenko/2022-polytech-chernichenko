@@ -1,3 +1,0 @@
-/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles/calculator.dir
-/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles/edit_cache.dir
-/Users/ilia.chernichenko/Documents/GitRepositories/2022-polytech-chernichenko/03_cpp/calculator/CMakeFiles/rebuild_cache.dir
