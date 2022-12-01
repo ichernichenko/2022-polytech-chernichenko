@@ -18,14 +18,13 @@
 ![](https://latex.codecogs.com/gif.latex?%7B%5Ccolor%7BGreen%7D%20O%28n%5E2%29%7D)
 
 
-```
+
 $$
 O(n^2)
 $$
-```
 
-```
+
+
 $$
 O(n log(n))
 $$
-```
