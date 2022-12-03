@@ -3,7 +3,7 @@ void swap(int arr[], int idx_a, int idx_b)
 {
     int temp = arr[idx_a]; // временная переменная
     arr[idx_a] = arr[idx_b];
-    arr[idx_b] = temp; 
+    arr[idx_b] = temp;
 }
 
 int partition(int arr[], int start, int end)
@@ -14,7 +14,8 @@ int partition(int arr[], int start, int end)
 
     // Считаем число элементов меньше опорного
     int count = 0;
-    for (int i = start + 1; i <= end; i++) {
+    for (int i = start + 1; i <= end; i++)
+    {
         if (arr[i] <= pivot)
             count++;
     }
@@ -26,14 +27,18 @@ int partition(int arr[], int start, int end)
     // Перебрасываем элементы меньше опорного
     // в левую часть, а больше опорного в правую часть
     int i = start, j = end;
-    while (i < pivotIndex && j > pivotIndex) {
-        while (arr[i] <= pivot) {
+    while (i < pivotIndex && j > pivotIndex)
+    {
+        while (arr[i] <= pivot)
+        {
             i++;
         }
-        while (arr[j] > pivot) {
+        while (arr[j] > pivot)
+        {
             j--;
         }
-        if (i < pivotIndex && j > pivotIndex) {
+        if (i < pivotIndex && j > pivotIndex)
+        {
             swap(arr, i, j);
             i++;
             j--;
@@ -56,4 +61,3 @@ void quick_sort(int arr[], int start, int end)
     // Сортировка правой части
     quick_sort(arr, p + 1, end);
 }
-

@@ -11,5 +11,5 @@ int linear_search(int arr[], int n, int x)
             return i;
         }
     }
-    return -1; // 
+    return -1; 
 }

@@ -14,8 +14,8 @@ int main()
         fill_array_random(arr, n, 0, 1000);
         auto begin = chrono::steady_clock::now(); //Текущее время перед выполнением функци
         selection_sort(arr, n);
-        auto end = chrono::steady_clock::now();                                    //Текущее время после выполнения функции
-        auto elapsed_ss = chrono::duration_cast<chrono::nanoseconds>(end - begin); //Потраченное время на выполнение функции
+        auto end = chrono::steady_clock::now(); //Потраченное время на выполнение функции
+        auto elapsed_ss = chrono::duration_cast<chrono::nanoseconds>(end - begin);
 
         begin = chrono::steady_clock::now();
         quick_sort(arr, 0, n);
