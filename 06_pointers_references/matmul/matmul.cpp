@@ -3,11 +3,11 @@
 void matmul(int **a, int a_m, int a_n, int **b, int b_m, int b_n, int **c); // Умножение двух матриц
 /// @brief 
 /// @param a - матрица а
-/// @param m_a - количество строк матрицы а
-/// @param n_a - количество столбцов матрицы а
+/// @param m_a - количество столбцов матрицы а
+/// @param n_a - количество строк матрицы а
 /// @param b  - матрица b
-/// @param m_b - количество строк матрицы b
-/// @param n_b - количесвто столбцов матрицы b
+/// @param m_b - количество столбцов матрицы b
+/// @param n_b - количесвто строк матрицы b
 /// @return 
 bool mateq(int **a, int m_a, int n_a, int **b, int m_b, int n_b); // Сравнение двух матриц
 
@@ -37,7 +37,7 @@ int main()
 
     matmul(a, n, m, b, m, n, c);
 
-    assert(mateq(c, 3, 3, expected_c, 3, 3) == true);
+    assert(mateq(c, n, m, expected_c, n, m) == true);
 
     return 0;
 }
@@ -51,15 +51,15 @@ void matmul(int **a, int a_m, int a_n, int **b, int b_m, int b_n, int **c)
         for (int j = 0; j < b_n; j++)
         {
             c[i][j] = 0;
-            for (int k = 0; k < a_n; k++)
-                c[i][j] += a[i][k] * b[k][j];
+            for (int k = 0; k < a_m; k++)
+                c[i][j] = a[i][k] * b[k][j]+c[i][j];
         }
     }
 }
 
 bool mateq(int **a, int m_a, int n_a, int **b, int m_b, int n_b)
 {
-    if (m_a != m_b || n_a != n_b)
+    if (m_a != m_b || n_a != n_b)// || логическое или
         return false;
     for (int i = 0; i < m_a; i++)
     {

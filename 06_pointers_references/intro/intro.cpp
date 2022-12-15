@@ -18,7 +18,11 @@ unsigned int length(const char* str)
 
 int main()
 {
+    char arr[] = {'a', 'b', '\0'};
+    char arr1[] = "ab"; // равносильное объявление массива символов
+    std::cout << length(arr1) << "\n";
     std::cout << length("hello world");
+    
     assert(length("a") == 1);
     assert(length("ab") == 2);
     assert(length("") == 0);
