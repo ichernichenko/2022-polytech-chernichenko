@@ -1,11 +1,11 @@
-const char numbers[] = "0123456789";
-const int arr_numbers[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+const char numbers[] = "0123456789"; // Вспомогательный массив для конвертации в int 
+const int arr_numbers[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; // Вспомогательный массив для конвертации в char
 
 unsigned int length(const char* str)
 {
     if (str == nullptr)
         return 0;
-    const char *c = str;
+    const char *c = str; // объявляем вспомогательный указатель с и ставим его на начало исходной строки
     while (*c != '\0')
         ++c;
     return c - str;
@@ -31,7 +31,7 @@ int convert_to_int(const char* x)
 
 const char* convert_to_char(int x)
 {
-    int y = x;
+    int y = x;            
     int c = 1;            // количество цифр
     while ((y / 10) != 0) // подсчитываем количество цифр
     {
@@ -51,9 +51,9 @@ const char* convert_to_char(int x)
                 break;               // выход из внутреннего for, т.к. цифру соответствующего разняда уже нашли и далее перебирать массив arr_numbers нет смысла
             }
         }
-        x = x / 10; // уменьшаем число на 10
+        x = x / 10; // уменьшаем число на 10, чтобы отбросить последнюю цифру 
     }
-    //res[c] = '\0';
+    // res[c] = '\0';
     return res;
 }
 

@@ -3,6 +3,7 @@ project(mull VERSION 0.1.0)
 
 
 add_executable(mull 
-               mull.cpp)
+               main.cpp          
+               mul.cpp)
 
 
